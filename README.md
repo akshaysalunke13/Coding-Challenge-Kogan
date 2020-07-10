@@ -1,8 +1,7 @@
 # Coding-Challenge-Kogan
-Solution to (Kogan Coding Challenge)[https://kogan-recruitment.herokuapp.com/challenge/6b463a3d03043748ff92a8caf59393d4/]
+Solution to [Kogan Coding Challenge](https://kogan-recruitment.herokuapp.com/challenge/6b463a3d03043748ff92a8caf59393d4/)
 
 **Akshay Sunil Salunke**
-akshaysalunke13@gmail.com
 
 # Setup
 Run the following commands in terminal(macOS/Linux) or cmd(Windows).
@@ -17,7 +16,7 @@ On Windows:
 
 ### Activating venv
 On macOS and Linux:
-`source env/bin/activate`
+`source env/bin/activate` or `. env/bin/activate`
 
 On Windows:
 `.\env\Scripts\activate`
@@ -28,4 +27,4 @@ On Windows:
 # Run
 `python kogan-coding-challenge.py`
 
-Average cubic weight of all items in ***Air Conditioners*** will be printed.
+Average cubic weight of all items in ***Air Conditioners*** category will be printed.
