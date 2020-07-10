@@ -3,6 +3,8 @@ Solution to [Kogan Coding Challenge](https://kogan-recruitment.herokuapp.com/cha
 
 **Akshay Sunil Salunke**
 
+**Language**: `Python 3.5+`
+
 # Setup
 Run the following commands in terminal(macOS/Linux) or cmd(Windows).
 
