@@ -15,7 +15,7 @@ class KoganChallenge:
     """
     BASE_URL = 'http://wp8m3he1wt.s3-website-ap-southeast-2.amazonaws.com'
     ENDPOINT = '/api/products/1'
-    INDUSTRY_CUBIC = 250
+    INDUSTRY_CUBIC = 250 # Industry cubic conversion rate = 250 kg/m^3
     total_acs = 0
     total_cubic_weight = 0
 
@@ -34,6 +34,7 @@ class KoganChallenge:
         while(url is not None):
             try:
                 response = requests.get(url)
+                # Raise exception if the request returned error code.
                 response.raise_for_status()
                 response_data = json.loads(response.text)
             except requests.exceptions.RequestException as e:
@@ -43,8 +44,10 @@ class KoganChallenge:
                 print("Error parsing json response.", e)
                 raise
             
+            #Send response json for processing
             self.process_data(response_data)
 
+            #Get next page url from response json
             next_url = response_data['next']
             if next_url:
                 url = self.BASE_URL + next_url
